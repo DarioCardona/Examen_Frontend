@@ -1,0 +1,11 @@
+<div ng-controller="usuarioController" id="body_todo">
+  <div class= 'col-xs-4 col-xs-offset-4  ' >
+    <div id='usuario'>
+       <h3> NOMBRE:</h3>
+        <input type="text" name="nombre" value="" ng-model = "user.nombre" />
+       <h3>CONTRASE&Ntilde;A:</h3>
+        <input type="password" name="password" value="" ng-model = "user.password"/><br> </br>
+        <button id='aceptar' type="button" class="btn btn-success" aria-label="Left Align" ng-click="login(user)" >ACEPTAR</button>
+    </div>
+  </div>
+</div>

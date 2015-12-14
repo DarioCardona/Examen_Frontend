@@ -16,11 +16,36 @@ app.config(['$stateProvider', '$urlRouterProvider', '$routeProvider', function($
               pageTitle: 'Distribuidora DC'
             }
         })
-				
-        $routeProvider
+				.state('usuario', {
+            url: '/login',
+            templateUrl: '/views/usuario.html',
+            controller: 'usuarioController',
+
+        })
+				.state('regalo', {
+            url: '/regalo',
+            templateUrl: '/views/regalo.html',
+            controller: 'regaloController',
+
+
+        })
+				.state('tabla1', {
+            url: '/tabla1',
+            templateUrl: '/views/tabla1.html',
+            controller: 'tabla1Controller',
+
+        })
+				.state('tabla2', {
+            url: '/tabla2',
+            templateUrl: '/views/tabla2.html',
+            controller: 'tabla2Controller',
+
+        })
+
+        /*$routeProvider
             .when('/compras', {template: 'views/compras.html', controller: 'comprasController'})
             .when('/facturacion', {template: '/views/facturacion.html', controller: 'facturacionController'})
-            .when('/abono', {template: '/views/abono.html', controller: 'abonoController'});
+            .when('/abono', {template: '/views/abono.html', controller: 'abonoController'});*/
 }]);
 
 app.run(function($rootScope, $state) {
