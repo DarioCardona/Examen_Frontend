@@ -29,6 +29,13 @@ app.config(['$stateProvider', '$urlRouterProvider', '$routeProvider', function($
 
 
         })
+				.state('admin', {
+            url: '/admin',
+            templateUrl: '/views/admin.html',
+            controller: 'adminController',
+
+
+        })
 				.state('tabla1', {
             url: '/tabla1',
             templateUrl: '/views/tabla1.html',

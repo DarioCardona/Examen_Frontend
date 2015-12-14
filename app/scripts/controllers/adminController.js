@@ -1,6 +1,6 @@
 angular.module('AngularScaffold.Controllers')
-  .controller('adminController', ['AuthService','$state','$scope', 'adminService', 'indexService','$rootScope', '$sessionStorage',
-   function (AuthService,$state,$scope, adminService, indexService, $rootScope, $sessionStorage) {
+  .controller('adminController', ['AuthService','$state','$scope', 'indexService','$rootScope', '$sessionStorage',
+   function (AuthService,$state,$scope, indexService, $rootScope, $sessionStorage) {
 
     $scope.gousuario = function(){
       //if($sessionStorage.currentUser && $sessionStorage.currentUser.scope.indexOf('Administrador') > -1){

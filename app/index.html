@@ -18,32 +18,7 @@
     <!-- endinject -->
   </head>
   <body>
-    <!-- Declaracion Barra -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container" ng-controller="indexController" >
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-              <a class="navbar-brand" href="">   <img alt="Brand" src=""></a>
-              <a class="navbar-brand" href="" id="BrandLogo">  <strong> {{ indexService.title() }} </strong>  </a>
-        </div>
 
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li> <a  href="" data-ng-hide="$state.includes('login')" ng-click="gofacturacion()" >Facturacion</a> </li>
-            <li> <a href="" data-ng-hide="$state.includes('login')"  ng-click="godevoluciones()">Devoluciones</a> </li>
-            <!--<li> <a href="" data-ng-hide="$state.includes('login')"  ng-click="()"></a> </li>-->
-            <li> <a href="" data-ng-hide="$state.includes('login')"  ng-click="goabonos()">Abonos</a> </li>
-            <li> <a href="" data-ng-hide="$state.includes('login')"  ng-click="gotoproveedor()">Compras</a> </li>
-            <li> <a href="" data-ng-hide="$state.includes('login')"  ng-click="gograficas()">Graficas</a> </li>
-            <li> <a href="" data-ng-hide="$state.includes('login')" ng-click="logout()">Cerrar Sesion</a> </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Fin Declaracion Barra -->
 
       <div ui-view></div>
 
@@ -67,30 +42,30 @@
   <script src="app.js"></script>
 
   <!-- inject:js -->
-  
+
   <script src="scripts/controllers/adminController.js"></script>
-  
+
   <script src="scripts/controllers/HomeController.js"></script>
-  
+
   <script src="scripts/controllers/indexController.js"></script>
-  
+
   <script src="scripts/controllers/loginController.js"></script>
-  
+
   <script src="scripts/controllers/usuarioController.js"></script>
-  
+
   <script src="scripts/services/authService.js"></script>
-  
+
   <script src="scripts/services/chartsService.js"></script>
-  
+
   <script src="scripts/services/HomeService.js"></script>
-  
+
   <script src="scripts/services/indexService.js"></script>
-  
+
   <script src="scripts/services/loginService.js"></script>
-  
+
   <script src="scripts/services/navbarService.js"></script>
-  
+
   <script src="scripts/services/usuarioService.js"></script>
-  
+
   <!-- endinject -->
 </html>
